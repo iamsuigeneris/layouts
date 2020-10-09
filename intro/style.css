@@ -1,0 +1,63 @@
+/* 
+   Static Positioning or Normal Flow 
+   This is the default positioning or normal flow
+*/
+
+ body {
+    width: 500px;
+    margin: 0 auto;
+}
+/* p {
+    background-color: rgba(207,232,220);
+    border: 2px solid rgb(79,185,227);
+    padding: 10px;
+    border-radius: 5px;
+} */ 
+
+/* relative positioning
+   This takes the element a little out of the original position with others elements around it.
+*/
+
+/* .positioned {
+    position: relative;
+    top: 30px;
+    left: 30px;
+    background: rgba(255,84,104,.3);
+    border: 2px solid rgb(255,84,104);
+} */
+
+/*absolute positioning
+  This is used to completely remove an element from normal flow, 
+  and place it using offsets from edges of a CONTAINING BLOCK. 
+*/
+/* .positioned {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    background: rgba(255,84,104,.3);
+    border: 2px solid rgb(255,84,104);
+} */
+
+/* Fixed positioning 
+   Fixed positioning removes element from document flow in the same way as absolute
+   positioning.However, instead of the offsets being applied from the container,
+   they are applied from the VIEWPORT.
+*/
+
+.positioned {
+    position: fixed;
+    padding: 5px;
+    top: 30px;
+    left: 60px;
+    background: rgba(255,84,104,.3);
+    border: 2px solid rgb(255,84,104); 
+}
+/*
+ Sticky Positioning
+ This mixes the default static positioning with fixed position.
+*/
+.positioned {
+    position: sticky;
+    top: 30px;
+    left: 30px;
+}
